@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.container{
+    min-width: 50%;
+    height: 40vh;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.clock{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    transform: translate(-0%, -50%);
+    border: 1px solid white;
+    padding: 20px 0px;
+    font-family: 'Roboto mono',monospace;
+    box-shadow: 1px 10px 0px #000;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    font-size: 60px;
+    transition: all 1s;
+}
+
+.clock h1{
+    font-size: 60px;
+    color: #777;
+}
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-box button{
+    padding: 10px 25px;
+    text-transform: capitalize;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    /* background: red; */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto mono',monospace;
+    cursor: pointer;
+}
+
+ #pause{
+    background: blue;
+}
+
+ #reset{
+    background: red;
+}
+
+ #start{
+    background: green;
+}
